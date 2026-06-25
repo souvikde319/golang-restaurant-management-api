@@ -1,310 +1,229 @@
+<div align="center">
+
 # 🍽️ Restaurant Management API
 
-<p align="center">
-  <img src="docs/images/logo.png" width="180" alt="Restaurant Management API"/>
-</p>
+### Production-Ready Restaurant Management REST API built with Golang
 
-<h3 align="center">
-Production-ready Restaurant Management REST API built with Golang, Gin, GORM, MySQL, JWT Authentication and RESTful API principles.
-</h3>
+<img src="https://skillicons.dev/icons?i=go,mysql,docker,git,github,vscode" />
 
-<p align="center">
+<br>
 
-![Go](https://img.shields.io/badge/Go-1.24-00ADD8?logo=go)
-![Gin](https://img.shields.io/badge/Gin-Web_Framework-success)
-![GORM](https://img.shields.io/badge/GORM-ORM-blue)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
-![JWT](https://img.shields.io/badge/JWT-Authentication-red)
-![REST API](https://img.shields.io/badge/API-REST-green)
-![License](https://img.shields.io/badge/License-MIT-blue)
-
-</p>
+![Go](https://img.shields.io/badge/Go-1.24-00ADD8?style=for-the-badge&logo=go)
+![Gin](https://img.shields.io/badge/Gin-Web_Framework-success?style=for-the-badge)
+![GORM](https://img.shields.io/badge/GORM-ORM-blue?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge)
+![JWT](https://img.shields.io/badge/JWT-Authentication-red?style=for-the-badge)
+![REST API](https://img.shields.io/badge/REST-API-green?style=for-the-badge)
 
 ---
 
-# 📌 Overview
+A scalable Restaurant Management Backend API developed using **Golang**, **Gin**, **GORM**, and **MySQL**.
 
-Restaurant Management API is a backend application developed using **Golang** and the **Gin Web Framework**. It exposes RESTful APIs for managing restaurant operations including users, menu items, food, tables, orders, invoices, and order items.
-
-This project demonstrates backend development using Golang, API routing, middleware, database connectivity, authentication, and CRUD operations.
+</div>
 
 ---
 
-# 🚀 Features
+# 📖 Overview
 
-## Authentication
+Restaurant Management API is a backend application that helps restaurants manage their daily operations efficiently.
 
-* JWT Authentication
-* Secure Password Hashing
-* Protected APIs
-* Authentication Middleware
+The project demonstrates modern backend development practices using Golang and RESTful APIs.
 
-## User Management
+---
 
-* Register User
-* Login User
-* Update User
-* Delete User
-* User Profile
+# ✨ Features
 
-## Menu Management
+### 👤 User Management
 
-* Add Menu
-* Update Menu
-* Delete Menu
-* Get Menu List
+- Register User
+- Login User
+- JWT Authentication
+- Update User
+- Delete User
 
-## Food Management
+---
 
-* Create Food
-* Update Food
-* Delete Food
-* Food Listing
+### 🍔 Food Management
 
-## Table Management
+- Add Food
+- Update Food
+- Delete Food
+- List Foods
 
-* Add Restaurant Tables
-* Update Tables
-* Delete Tables
-* Table Availability
+---
 
-## Order Management
+### 📋 Menu Management
 
-* Create Orders
-* Update Orders
-* Delete Orders
-* Order History
+- Create Menu
+- Update Menu
+- Delete Menu
+- View Menus
 
-## Invoice Management
+---
 
-* Generate Invoice
-* Invoice Details
+### 🪑 Table Management
 
-## Middleware
+- Create Table
+- Update Table
+- Delete Table
+- View Tables
 
-* JWT Authentication
-* Request Validation
-* Error Handling
+---
+
+### 🛒 Order Management
+
+- Create Orders
+- Order Items
+- Update Orders
+- Delete Orders
+
+---
+
+### 🧾 Invoice Management
+
+- Generate Invoice
+- View Invoice
+- Update Invoice
+
+---
+
+### 🔒 Security
+
+- JWT Authentication
+- Protected Routes
+- Password Hashing
+- Middleware
 
 ---
 
 # 🛠 Tech Stack
 
-| Technology | Usage                |
-| ---------- | -------------------- |
-| Golang     | Programming Language |
-| Gin        | Web Framework        |
-| GORM       | ORM                  |
-| MySQL      | Database             |
-| JWT        | Authentication       |
-| REST API   | Backend Architecture |
+| Technology | Description |
+|------------|-------------|
+| Go | Programming Language |
+| Gin | HTTP Framework |
+| GORM | ORM |
+| MySQL | Database |
+| JWT | Authentication |
+| REST API | API Architecture |
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 restaurant-management/
 
 ├── controllers/
-│   ├── foodController.go
-│   ├── invoiceController.go
-│   ├── menuController.go
-│   ├── orderController.go
-│   ├── orderItemController.go
-│   ├── tableController.go
-│   └── userController.go
 │
 ├── databases/
-│   └── databaseConnection.go
 │
 ├── helpers/
 │
 ├── middleware/
 │
 ├── models/
-│   ├── foodModel.go
-│   ├── invoiceModel.go
-│   ├── menuModel.go
-│   ├── orderItemModel.go
-│   ├── orderModel.go
-│   ├── tableModel.go
-│   └── userModel.go
 │
 ├── routes/
-│   ├── foodRouter.go
-│   ├── invoiceRouter.go
-│   ├── menuRouter.go
-│   ├── orderItemRouter.go
-│   ├── orderRouter.go
-│   ├── tableRouter.go
-│   └── userRouter.go
 │
 ├── .gitignore
 ├── go.mod
 ├── go.sum
-├── main.go
-└── README.md
+└── main.go
 ```
 
 ---
 
-# 🏗 Project Architecture
+# 🏗 System Architecture
 
 ```text
                     Client
-                      │
+                       │
                  HTTP Request
-                      │
-                 Gin Router
-                      │
-                 Middleware
-                      │
-                Controllers
-                      │
-                   Models
-                      │
-                    GORM
-                      │
-                   MySQL
+                       │
+                Gin HTTP Router
+                       │
+                 Authentication
+                 Middleware Layer
+                       │
+                  Controllers
+                       │
+                    Models
+                       │
+                     GORM
+                       │
+                    MySQL
 ```
 
 ---
 
-# ⚙ Installation
+# 🚀 Getting Started
 
 ## Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/restaurant-management-api.git
+```
 
+Move into project
+
+```bash
 cd restaurant-management-api
 ```
 
----
-
-## Install Dependencies
+Install dependencies
 
 ```bash
 go mod tidy
 ```
 
----
-
-## Configure Database
-
-Update your database configuration inside
-
-```
-databases/databaseConnection.go
-```
-
----
-
-## Run the Project
+Run project
 
 ```bash
 go run main.go
-```
-
-The server will start on:
-
-```
-http://localhost:8080
 ```
 
 ---
 
 # 🔐 Authentication
 
-Most APIs require a JWT token.
+All protected APIs require
 
 ```
-Authorization: Bearer <your_token>
+Authorization: Bearer YOUR_JWT_TOKEN
 ```
 
 ---
 
-# 📌 Available API Modules
+# 📦 Available Modules
 
-### User APIs
+✅ User API
 
-* Register User
-* Login User
-* Get Users
-* Update User
-* Delete User
+✅ Food API
 
----
+✅ Menu API
 
-### Food APIs
+✅ Table API
 
-* Create Food
-* Get Foods
-* Update Food
-* Delete Food
+✅ Order API
+
+✅ Order Item API
+
+✅ Invoice API
 
 ---
 
-### Menu APIs
+# 📷 Screenshots
 
-* Create Menu
-* Get Menus
-* Update Menu
-* Delete Menu
+## Swagger
 
----
-
-### Order APIs
-
-* Create Order
-* Get Orders
-* Update Order
-* Delete Order
+```
+docs/images/swagger.png
+```
 
 ---
 
-### Order Item APIs
-
-* Add Order Item
-* Get Order Items
-* Update Order Item
-* Delete Order Item
-
----
-
-### Table APIs
-
-* Create Table
-* Get Tables
-* Update Table
-* Delete Table
-
----
-
-### Invoice APIs
-
-* Generate Invoice
-* Get Invoice
-* Update Invoice
-* Delete Invoice
-
----
-
-# 📦 Packages Used
-
-* Gin
-* GORM
-* MySQL Driver
-* JWT
-* bcrypt
-* godotenv
-
----
-
-# 📸 Screenshots
-
-## API Testing
+## Postman
 
 ```
 docs/images/postman.png
@@ -312,7 +231,7 @@ docs/images/postman.png
 
 ---
 
-## Database Schema
+## Database
 
 ```
 docs/images/database.png
@@ -320,68 +239,56 @@ docs/images/database.png
 
 ---
 
-## Application Architecture
+# 🚀 Future Improvements
 
-```
-docs/images/architecture.png
-```
-
----
-
-# 🔮 Future Improvements
-
-* Docker Support
-* Docker Compose
-* Redis Caching
-* Swagger Documentation
-* Unit Testing
-* Integration Testing
-* Clean Architecture
-* Repository Pattern
-* Service Layer
-* CI/CD Pipeline
-* Kubernetes Deployment
-* AWS Deployment
-* Role-Based Authorization
-* API Rate Limiting
-* Structured Logging
-* Prometheus Monitoring
+- Docker
+- Docker Compose
+- Redis Cache
+- Swagger Documentation
+- Unit Testing
+- Clean Architecture
+- Repository Pattern
+- Service Layer
+- GitHub Actions CI/CD
+- Kubernetes
+- AWS Deployment
+- Prometheus Monitoring
+- Grafana Dashboard
 
 ---
 
-# 📚 Learning Outcomes
+# 📚 What I Learned
 
-This project helped me understand:
-
-* Building REST APIs in Golang
-* Gin Framework
-* JWT Authentication
-* GORM ORM
-* CRUD Operations
-* Middleware
-* Route Management
-* Database Connectivity
-* Project Organization
-* Backend Development Best Practices
+- Building REST APIs with Golang
+- Gin Framework
+- CRUD Operations
+- JWT Authentication
+- Middleware
+- GORM ORM
+- MySQL Integration
+- RESTful API Design
+- Backend Project Structure
 
 ---
 
 # 👨‍💻 Author
 
-**Souvik De**
+## Souvik De
 
 Backend Developer | Golang | DevOps | Cloud Enthusiast
 
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
+📧 Email: your-email@gmail.com
 
-💼 LinkedIn: https://linkedin.com/in/YOUR_PROFILE
+💼 LinkedIn:
+https://linkedin.com/in/your-profile
 
-🐙 GitHub: https://github.com/YOUR_USERNAME
+🐙 GitHub:
+https://github.com/YOUR_USERNAME
 
 ---
 
-# ⭐ Support
+<div align="center">
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+### ⭐ If you found this project helpful, please give it a Star ⭐
 
-It motivates me to build more open-source backend projects.
+</div>
