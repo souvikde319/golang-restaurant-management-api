@@ -1,0 +1,75 @@
+# Restaurant Management API
+
+Production-ready Restaurant Management System built using Golang.
+
+## Features
+
+- JWT Authentication
+- Role Based Access
+- User Management
+- Menu Management
+- Order APIs
+- Payment APIs
+- Inventory APIs
+- Swagger Documentation
+- Docker Support
+- Redis Cache
+- PostgreSQL
+- Logging
+- Environment Variables
+- Graceful Shutdown
+- Unit Testing
+
+## Tech Stack
+
+- Golang
+- Gin
+- PostgreSQL
+- Redis
+- Docker
+- Swagger
+- JWT
+- bcrypt
+- Makefile
+
+## Project Structure
+
+cmd/
+internal/
+pkg/
+configs/
+database/
+docs/
+scripts/
+
+## Installation
+
+git clone ...
+
+go mod download
+
+go run cmd/server/main.go
+
+## API Documentation
+
+/swagger/index.html
+
+## Architecture
+
+Clean Architecture
+
+Repository
+↓
+
+Service
+↓
+
+Handler
+
+## Future Improvements
+
+- Kubernetes Deployment
+- Kafka
+- Prometheus
+- Grafana
+- GitHub Actions
